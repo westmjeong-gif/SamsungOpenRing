@@ -164,3 +164,5 @@ This software interacts with the Galaxy Ring using the same BLE commands that Sa
 ## License
 
 MIT -- see [LICENSE](LICENSE)
+
+Ring Short Control build test
