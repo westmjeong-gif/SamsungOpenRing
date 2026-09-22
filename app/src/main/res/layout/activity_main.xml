@@ -30,7 +30,55 @@
             android:textColor="?android:textColorSecondary"
             android:layout_marginBottom="16dp" />
 
-        <!-- Card: Quick Start -->
+        <!-- Accessibility Setup -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Accessibility Setup"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/accessibilityStatusText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Accessibility: checking..."
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First setup:\n1. Connect your Galaxy Ring\n2. Enable SamsungOpenRing accessibility\n3. Return here and tap Start"
+                    android:textSize="13sp"
+                    android:textColor="?android:textColorSecondary"
+                    android:layout_marginBottom="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/openAccessibilityButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Open Accessibility Settings" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Manual Control -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -89,12 +137,13 @@
                         android:text="Stop"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                         android:layout_marginStart="4dp" />
+
                 </LinearLayout>
 
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Card: Ring Scroll Control -->
+        <!-- Ring Scroll Control -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -171,7 +220,7 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Card: Webhook -->
+        <!-- Webhook -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -207,6 +256,7 @@
                         android:src="@android:drawable/ic_menu_help"
                         android:background="?selectableItemBackgroundBorderless"
                         android:contentDescription="Help" />
+
                 </LinearLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -227,7 +277,7 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Card: Triggers -->
+        <!-- Triggers -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -263,6 +313,7 @@
                         android:src="@android:drawable/ic_menu_help"
                         android:background="?selectableItemBackgroundBorderless"
                         android:contentDescription="Help" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -310,12 +361,13 @@
                         android:text="Disarm"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                         android:layout_marginStart="4dp" />
+
                 </LinearLayout>
 
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Card: Advanced -->
+        <!-- Advanced -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -351,6 +403,7 @@
                         android:src="@android:drawable/ic_menu_help"
                         android:background="?selectableItemBackgroundBorderless"
                         android:contentDescription="Help" />
+
                 </LinearLayout>
 
                 <TextView
@@ -385,12 +438,13 @@
                         style="@style/Widget.MaterialComponents.Button.TextButton"
                         android:textSize="12sp"
                         android:layout_marginStart="4dp" />
+
                 </LinearLayout>
 
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Card: Event Log -->
+        <!-- Event Log -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -446,6 +500,7 @@
                         android:src="@android:drawable/arrow_down_float"
                         android:background="?selectableItemBackgroundBorderless"
                         android:contentDescription="Toggle log" />
+
                 </LinearLayout>
 
                 <TextView
