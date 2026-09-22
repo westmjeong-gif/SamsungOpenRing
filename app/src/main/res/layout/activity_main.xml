@@ -93,7 +93,86 @@
 
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
+        <!-- Card: Ring Scroll Control -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ring Scroll Control"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Scroll distance -->
+                <TextView
+                    android:id="@+id/scrollDistanceValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Scroll distance: 30%"
+                    android:textSize="14sp" />
+
+                <SeekBar
+                    android:id="@+id/scrollDistanceSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="50"
+                    android:progress="20"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Swipe duration -->
+                <TextView
+                    android:id="@+id/swipeDurationValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Swipe speed: 150 ms"
+                    android:textSize="14sp" />
+
+                <SeekBar
+                    android:id="@+id/swipeDurationSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="320"
+                    android:progress="70"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Input cooldown -->
+                <TextView
+                    android:id="@+id/inputCooldownValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Re-input interval: 300 ms"
+                    android:textSize="14sp" />
+
+                <SeekBar
+                    android:id="@+id/inputCooldownSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="900"
+                    android:progress="200"
+                    android:layout_marginBottom="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/resetScrollSettingsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Restore defaults"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
         <!-- Card: Webhook -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
