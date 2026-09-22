@@ -60,6 +60,13 @@ class GestureService : Service() {
     private val gestureCallback = GestureListener { event ->
         log("GESTURE #${event.gestureId} detected")
         updateNotification("Gesture #${event.gestureId} detected")
+            val swipeStarted = RingAccessibilityService.swipeUp()
+
+    if (swipeStarted) {
+        log("Ring gesture -> swipe up")
+    } else {
+        log("Ring gesture detected, but Accessibility Service is unavailable")
+    }
         // NOTE: a detected pinch deliberately does NOT extend the safety cap.
 
         val url = webhookUrl
